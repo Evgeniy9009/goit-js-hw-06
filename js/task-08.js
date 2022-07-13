@@ -10,7 +10,8 @@ function onFormSubmit(event) {
     const { email, password } = event.currentTarget
     
     if (email.value === "" || password.value === "") {
-        alert ("Все поля должны быть заполнены.")
+        alert("Все поля должны быть заполнены.")
+        return
     }
 
     const formData = {
